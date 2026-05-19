@@ -1,0 +1,80 @@
+body {
+  transition: 1s;
+}
+.container {
+  margin-top: 50px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 3px 3px 18px 0px #000000;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container h3 {
+  font-size: 20px;
+  text-align: center;
+}
+#colorCode {
+  font-size: 30px;
+  font-weight: bold;
+}
+.BTN {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+.BTN button {
+  border: none;
+  border-radius: 10px;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  background: blue;
+  color: white;
+  font-weight: bold;
+}
+.BTN button:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 2px 3px 12px -3px #000000;
+}
+#historyList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+#historyList li {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 150px;
+  justify-content: space-between;
+}
+#historyList li button {
+  border: none;
+  background: #ef4444;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+}
+#historyList li button:hover {
+  background: #dc2626;
+  cursor: pointer;
+}
