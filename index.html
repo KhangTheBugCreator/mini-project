@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generate Color</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Shopping Cart</title>
   </head>
   <body>
+    <h1>Mini Shopping Cart</h1>
     <div class="container">
-      <h3>Simple Generate Color Code</h3>
-      <p id="colorCode">#FFFFFF</p>
-      <div class="BTN">
-        <button id="generateBtn">Generate Color</button>
-        <button id="clearBtn">Clear All</button>
+      <!-- product list -->
+      <div class="products">
+        <h2>Product List</h2>
+        <div id="productList"></div>
       </div>
-      <h3>Color History</h3>
-      <ul id="historyList"></ul>
+      <!-- cart -->
+      <div class="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cartList"></div>
+        <div class="total">Total: <span id="totalPrice">0</span> VND</div>
+      </div>
     </div>
     <script src="lib.js"></script>
+    <script>
+      renderProduct();
+    </script>
   </body>
 </html>

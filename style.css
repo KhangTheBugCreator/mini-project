@@ -1,80 +1,59 @@
 body {
-  transition: 1s;
+  text-align: center;
+  background-color: #dfdfdf;
 }
+
 .container {
-  margin-top: 50px;
-  width: 400px;
-  margin-left: auto;
+  display: flex;
+  width: 50%;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  background-color: white;
-  border-radius: 50px;
-  box-shadow: 3px 3px 18px 0px #000000;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.container h3 {
-  font-size: 20px;
-  text-align: center;
-}
-#colorCode {
-  font-size: 30px;
-  font-weight: bold;
-}
-.BTN {
-  margin-top: 10px;
-  display: flex;
-  gap: 20px;
-}
-.BTN button {
-  border: none;
-  border-radius: 10px;
-  line-height: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 20px;
-  background: blue;
-  color: white;
-  font-weight: bold;
-}
-.BTN button:hover {
-  cursor: pointer;
-  transition: 0.4s;
-  box-shadow: 2px 3px 12px -3px #000000;
-}
-#historyList {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-}
-#historyList li {
-  font-weight: bold;
-  font-size: 20px;
-  background-color: aliceblue;
-  border-radius: 20px;
-  padding: 10px;
-  display: flex;
-  width: 80%;
-  align-items: center;
-  gap: 150px;
+  margin-left: auto;
   justify-content: space-between;
+  align-items: top;
+  gap: 36px;
 }
-#historyList li button {
+button {
   border: none;
-  background: #ef4444;
-  padding: 5px 10px;
-  font-size: 14px;
-  border-radius: 8px;
-  text-align: center;
+  line-height: 20px;
+  background-color: rgb(24, 100, 58);
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
 }
-#historyList li button:hover {
-  background: #dc2626;
+button:hover {
   cursor: pointer;
+  opacity: 50%;
+}
+h2 {
+  font-size: 30px;
+}
+.products,
+.cart {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+}
+#productList .product {
+  margin-top: 20px;
+  border: 1px solid rgb(189, 187, 187);
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+#cartList .cart-item {
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: 1px solid rgb(189, 187, 187);
+}
+.cart .total {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 600;
 }
