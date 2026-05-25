@@ -30,8 +30,8 @@ function renderProduct() {
     productList.innerHTML += `
       <div class="product">
         <h3>${product.name}</h3>
-        <p>Price: ${product.price} VND</p>
-        <button onclick="addToCart(${product.id})">Add To Cart</button>
+        <p>Price (Giá): ${product.price} VND</p>
+        <button onclick="addToCart(${product.id})">Add To Cart (Thêm vào giỏ)</button>
       </div>
     `;
   }
@@ -67,11 +67,11 @@ function renderCart() {
         <h3>
           ${item.name}
         </h3>
-        <p>Price: ${item.price} VND</p>
-        <p>Quantity: ${item.quantity}</p>
+        <p>Price (Giá): ${item.price} VND</p>
+        <p>Quantity (Số lượng): ${item.quantity}</p>
         <button onclick="decreaseQuantity(${item.id})">-</button>
         <button onclick="increaseQuantity(${item.id})">+</button>
-        <button onclick="removeItem(${item.id})">Delete</button>
+        <button onclick="removeItem(${item.id})">Delete (Xóa)</button>
       </div>
     
     
