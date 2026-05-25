@@ -1,20 +1,20 @@
 const products = [
   {
     id: 1,
-    name: "Rose Flower",
-    price: 30000,
+    name: "Phở",
+    price: 40000,
   },
 
   {
     id: 2,
-    name: "Tulip Flower",
-    price: 25000,
+    name: "Bánh Mì",
+    price: 20000,
   },
 
   {
     id: 3,
-    name: "Sunflower",
-    price: 20000,
+    name: "Bún Nước Lèo",
+    price: 25000,
   },
 ];
 
